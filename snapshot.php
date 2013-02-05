@@ -18,7 +18,7 @@
 if($_GET['camera'] == 1) 
 {
 	$rand = rand(1000,9999);
-	$url = 'http://EXAMPLE.COM:80/snapshot.cgi?'.$rand;
+	$url = 'http://EXAMPLE.COM:80/snapshot.cgi?'.$rand;  // remember there needs to be a ? between the URL and the random number. Don't remove the question mark.
 	
 	$curl_handle=curl_init();
 	curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);
@@ -44,7 +44,7 @@ if($_GET['camera'] == 1)
 elseif($_GET['camera'] == 2) 
 {
 	$rand = rand(1000,9999);
-	$url = 'http://EXAMPLE.COM:81/snapshot.cgi?'.$rand;
+	$url = 'http://EXAMPLE.COM:81/snapshot.cgi?'.$rand;  // remember there needs to be a ? between the URL and the random number. Don't remove the question mark.
 	
 	$curl_handle=curl_init();
 	curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);
@@ -70,7 +70,7 @@ elseif($_GET['camera'] == 2)
 elseif($_GET['camera'] == 3) 
 {
 	$rand = rand(1000,9999);
-	$url = 'http://EXAMPLE.COM:82/snapshot.cgi?'.$rand;
+	$url = 'http://EXAMPLE.COM:82/snapshot.cgi?'.$rand;  // remember there needs to be a ? between the URL and the random number. Don't remove the question mark.
 	
 	$curl_handle=curl_init();
 	curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);
@@ -126,7 +126,7 @@ elseif($_GET['camera'] == 9)
 	
 	    # Your function to get one jpeg image
 		$rand = rand(1000,9999);
-		$url = 'http://EXAMPLE.COM:81/GetData.cgi?'.$rand;
+		$url = 'http://EXAMPLE.COM:81/GetData.cgi?'.$rand;  // remember there needs to be a ? between the URL and the random number. Don't remove the question mark.
 		
 		$curl_handle=curl_init();
 		curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);
